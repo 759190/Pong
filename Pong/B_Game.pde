@@ -34,15 +34,15 @@ ballx=ballx+vx;
   }
   //paddle bounce
    if(dL<=leftr+ballr) {
-      vx=(ballx-leftx)/20;
-      vy=(bally-lefty)/20;
+      vx=(ballx-leftx)/17;
+      vy=(bally-lefty)/17;
       leftpaddle.rewind();
       leftpaddle.play();
    }
     if(dR<=rightr+ballr) {
       vx=vx*-1;
-      vx=(ballx-rightx)/15;
-      vy=(bally-righty)/15;
+      vx=(ballx-rightx)/17;
+      vy=(bally-righty)/17;
       rightpaddle.rewind();
       rightpaddle.play();
    }
