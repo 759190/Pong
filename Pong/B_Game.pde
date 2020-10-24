@@ -41,8 +41,8 @@ ballx=ballx+vx;
    }
     if(dR<=rightr+ballr) {
       vx=vx*-1;
-      vx=(ballx-rightx)/20;
-      vy=(bally-righty)/20;
+      vx=(ballx-rightx)/15;
+      vy=(bally-righty)/15;
       rightpaddle.rewind();
       rightpaddle.play();
    }
@@ -108,7 +108,7 @@ ballx=ballx+vx;
    score.rewind();
    score.play();
  }
- if (ballx>800) {
+ if (ballx>900) {
    leftscore++; //left+1
    ballx=width/2;
    bally=height/2;
